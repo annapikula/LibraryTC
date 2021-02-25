@@ -1,0 +1,135 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User is already in login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3777000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T02:13:07.815Z",
+        "line": 8,
+        "name": "Login as librarian",
+        "description": "",
+        "id": "verify-both-students-and-librarians-login;login-as-librarian",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 201000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters librarian username",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersLibrarianUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 499000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enter librarian password",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEnterLibrarianPassword()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@librarian"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User is already in login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2306000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-25T02:13:12.441Z",
+        "line": 13,
+        "name": "Login as student",
+        "description": "",
+        "id": "verify-both-students-and-librarians-login;login-as-student",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters student username",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersStudentUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 505000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters student password",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersStudentPassword()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@student"
+          }
+        ]
+      }
+    ],
+    "name": "Verify both Students and Librarians login",
+    "description": "",
+    "id": "verify-both-students-and-librarians-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LibraryLogin.feature",
+    "tags": []
+  }
+]
