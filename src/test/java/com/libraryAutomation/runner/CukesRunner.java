@@ -15,13 +15,10 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/libraryAutomation/StepDefinitions",
         dryRun = false,
-        tags = "@student or @librarian"
+        tags = "@Student34"
 
 
 )
-
-
-
 
 public class CukesRunner {
 

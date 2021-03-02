@@ -1,135 +1,90 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "User is already in login page",
+        "start_timestamp": "2021-03-02T01:49:57.292Z",
+        "line": 3,
+        "name": "Scenario: Table columns names",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3777000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-25T02:13:07.815Z",
-        "line": 8,
-        "name": "Login as librarian",
-        "description": "",
-        "id": "verify-both-students-and-librarians-login;login-as-librarian",
+        "id": "as-a-student--i-should-be-able-to-see-tables-with-default-info;scenario:-table-columns-names",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 201000000,
+              "duration": 5168000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user enters librarian username",
+            "line": 5,
+            "name": "the user on the homepage",
             "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersLibrarianUsername()"
+              "location": "com.libraryAutomation.StepDefinitions.Six.TablesWithDefInfoStepDefinition.user_login_AsStudent()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 499000000,
+              "duration": 748000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user enter librarian password",
+            "line": 6,
+            "name": "the user should be see the following column names",
             "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEnterLibrarianPassword()"
+              "location": "com.libraryAutomation.StepDefinitions.Six.TablesWithDefInfoStepDefinition.user_see_column_names(java.util.List\u003cjava.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Actions"
+                ]
+              },
+              {
+                "cells": [
+                  "ISBN"
+                ]
+              },
+              {
+                "cells": [
+                  "Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Author"
+                ]
+              },
+              {
+                "cells": [
+                  "Category"
+                ]
+              },
+              {
+                "cells": [
+                  "Year"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowed By"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@librarian"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "User is already in login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2306000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-25T02:13:12.441Z",
-        "line": 13,
-        "name": "Login as student",
-        "description": "",
-        "id": "verify-both-students-and-librarians-login;login-as-student",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 130000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enters student username",
-            "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersStudentUsername()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 505000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user enters student password",
-            "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersStudentPassword()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@student"
+            "name": "@Student34"
           }
         ]
       }
     ],
-    "name": "Verify both Students and Librarians login",
+    "name": "As a student, I should be able to see tables with default info",
     "description": "",
-    "id": "verify-both-students-and-librarians-login",
+    "id": "as-a-student--i-should-be-able-to-see-tables-with-default-info",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/LibraryLogin.feature",
+    "uri": "file:src/test/resources/features/Six.TablesWithDefaultInfo.feature",
     "tags": []
   }
 ]
