@@ -1,4 +1,3 @@
-
 Feature: Verify both Students and Librarians login
 
   Background: User is already in login page
@@ -9,7 +8,7 @@ Feature: Verify both Students and Librarians login
     When user enters librarian username
     Then user enter librarian password
 
-@student
+  @student
   Scenario: Login as student
     When user enters student username
     And user enters student password
