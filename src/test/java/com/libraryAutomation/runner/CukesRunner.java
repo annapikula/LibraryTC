@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
          //right click cucumber report open in browser chrome
         features = "src/test/resources/features",
         glue = "com/libraryAutomation/StepDefinitions",
-        dryRun = false,
+        dryRun = true,
         tags = "@wip"
 
 

@@ -10,7 +10,16 @@ public class LandingPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    @FindBy(xpath = "//span[.='Dashboard']")
+    public WebElement dashboardTab;
+
+    @FindBy(xpath = "//span[.='Users']")
+    public WebElement usersTab;
+
     @FindBy(xpath = "//span[.='Books']")
     public WebElement booksTab;
+
+    @FindBy(xpath = "//span[.='Borrowing Books']")
+    public WebElement borrowingBooksTab;
 }
 

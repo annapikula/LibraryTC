@@ -1,1 +1,128 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-03T23:07:34.863Z",
+        "line": 4,
+        "name": "Students should have access to 2 modules",
+        "description": "",
+        "id": "users-should-have-access-to-the-correct-modules;students-should-have-access-to-2-modules",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the student on the home page",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.TC03ModulesStepDefinitions.the_student_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the student should see following modules",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.TC03ModulesStepDefinitions.student_should_see(java.util.ArrayList\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Books"
+                ]
+              },
+              {
+                "cells": [
+                  "Borrowing Books"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-03T23:07:34.942Z",
+        "line": 15,
+        "name": "Librarians  should have access to 3 modules",
+        "description": "",
+        "id": "users-should-have-access-to-the-correct-modules;librarians--should-have-access-to-3-modules",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the librarian on the homepage",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.TC03ModulesStepDefinitions.the_librarian_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the librarian should see following modules",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.TC03ModulesStepDefinitions.the_user_should_see_following_modules(java.util.ArrayList\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Dashboard"
+                ]
+              },
+              {
+                "cells": [
+                  "Users"
+                ]
+              },
+              {
+                "cells": [
+                  "Books"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "users should have access to the correct modules",
+    "description": "",
+    "id": "users-should-have-access-to-the-correct-modules",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC03Modules.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
