@@ -1,104 +1,34 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "User is already in login page",
+        "start_timestamp": "2021-03-03T22:18:27.870Z",
+        "line": 5,
+        "name": "Verify that the default record is 10",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3777000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-25T02:13:07.815Z",
-        "line": 8,
-        "name": "Login as librarian",
-        "description": "",
-        "id": "verify-both-students-and-librarians-login;login-as-librarian",
+        "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;verify-that-the-default-record-is-10",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 201000000,
+              "duration": 3925000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user enters librarian username",
+            "line": 6,
+            "name": "user is on the login page",
             "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersLibrarianUsername()"
+              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.user_is_on_the_login_page()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 499000000,
+              "duration": 87000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user enter librarian password",
-            "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEnterLibrarianPassword()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@librarian"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "User is already in login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2306000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user is on the login page",
-            "match": {
-              "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-25T02:13:12.441Z",
-        "line": 13,
-        "name": "Login as student",
-        "description": "",
-        "id": "verify-both-students-and-librarians-login;login-as-student",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 130000000,
-              "status": "passed"
-            },
-            "line": 14,
+            "line": 7,
             "name": "user enters student username",
             "match": {
               "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersStudentUsername()"
@@ -107,29 +37,97 @@
           },
           {
             "result": {
-              "duration": 505000000,
+              "duration": 161000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 8,
             "name": "user enters student password",
             "match": {
               "location": "com.libraryAutomation.StepDefinitions.LoginStepDefinitions.userEntersStudentPassword()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3115000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should see 10 in default",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 16
+                }
+              ],
+              "location": "com.libraryAutomation.StepDefinitions.UserStory_5.user_should_see_in_default(java.lang.Integer)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@student"
+            "name": "@UserStory5"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-03T22:18:35.275Z",
+        "line": 12,
+        "name": "show record for \u003ccount\u003e options",
+        "description": "",
+        "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page;show-record-for-\u003ccount\u003e-options",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 163000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click \u003ccount\u003e it should show",
+            "match": {
+              "location": "com.libraryAutomation.StepDefinitions.UserStory_5.i_click_count_it_should_show(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "15"
+                ]
+              },
+              {
+                "cells": [
+                  "100"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UserStory_5"
           }
         ]
       }
     ],
-    "name": "Verify both Students and Librarians login",
+    "name": "As a librarian, I should be able to see book records on user page",
     "description": "",
-    "id": "verify-both-students-and-librarians-login",
+    "id": "as-a-librarian--i-should-be-able-to-see-book-records-on-user-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/LibraryLogin.feature",
+    "uri": "file:src/test/resources/features/UserStory_5.feature",
     "tags": []
   }
 ]

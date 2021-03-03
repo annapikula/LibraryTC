@@ -69,6 +69,6 @@ public class LoginStepDefinitions {
     public void userEntersStudentPassword() {
         loginPageElements.UserPasswordInput.sendKeys(ConfigurationReader.getProperty("StudentPass34"));
         loginPageElements.signInButton.click();
-        Driver.closeDriver();
+      //  Driver.closeDriver();
     }
 }
